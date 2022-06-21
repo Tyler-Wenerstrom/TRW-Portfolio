@@ -1,0 +1,48 @@
+
+body {
+    font-family: 'Anek Latin', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: RGB(32, 33, 36);
+  padding: 1%;
+}
+
+.name {
+    font-size: 3rem;
+    text-shadow: 2%;
+    background-color: RGB(89, 189, 2);
+    color: black;
+    margin-left: -15px;
+    padding: 1%;
+    opacity: 0.21;
+    width: 45%;
+}
+
+nav {
+    font-size: 2rem;
+    margin-right: 3%;
+    list-style-type: armenian;
+    justify-content: space-between;
+    color: aliceblue;
+
+}
+a {
+    padding: 6px;
+}
+a:hover {
+cursor: hands;
+}
+
+.img {
+    border: 100px;
+    border-color: RGB(32, 33, 36);
+}
+@media screen and (max-width: 768px) {
+    body 
+      flex-direction: column;
+    }
