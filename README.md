@@ -7,7 +7,7 @@ In this challenge there was a main focus on organization and flex styling along 
 ## Links
 https://tyler-wenerstrom.github.io/TRW-Portfolio/
 
-<img src= "screenshot/Horiseon.png" width="500" height="600" alt="Screenshot"/>
+<img src= "images\trw portfolio.png" width="375" height="475" alt="Screenshot"/>
 
 ## Author
 https://github.com/Tyler-Wenerstrom
