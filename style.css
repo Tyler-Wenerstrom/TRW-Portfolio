@@ -5,11 +5,10 @@
 }
 body {
     font-family: 'Anek Latin', sans-serif;
+    margin: 0;
+    
 }
  
-main {
-    padding: 2rem 10rem 0 10rem;
-}
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +28,6 @@ main {
 
 .h1 {
     background-color: RGB(89, 189, 2);
-    margin-left: -7px;
     opacity: 0.25;
     color: black;
     border-radius:0 7px 7px 0;
@@ -47,6 +45,7 @@ main {
 }
 .child1, .child2, .child3 {
     display: flex;
+    align-items: center;
     justify-content: center;
     font-size: 4.20rem;
     padding-bottom: 10px;
@@ -54,27 +53,43 @@ main {
 .parent p {
     display: flex;
     font-size: 1.75rem;
-    justify-content: center6;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 .projects {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-bottom: 5rem;    
+    padding-bottom: 1rem; 
+    justify-content: center;
+    align-items: center;
+   
 }
 .projects .images {
   display: flex;
   flex: 1;
-  justify-content: center;
   max-width: 100%;
+  min-width: none;
   max-height: 90%;
-  padding: px;
-  border: solid 4px;
+  border: solid 3px;
+  
+  
 }
-.images:nth-child(:last-child) {
-    align-self: flex-end;
+.projects2 {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
+
+.projects2 .images {
+    max-width: 100%;
+    max-height: 90%;
+    border: solid 3px;
+  }
+
 .contactinfo {
     display: flex;
     justify-content: center;
@@ -99,24 +114,21 @@ img:hover {
     cursor: hands;
     }
 .img {
-    margin-left: -5px;
-    margin-right: -5px;
-    margin-bottom: 100px;
+    display: flex;
     border-radius:0 7px 7px 0;
-    border: 5px solid rgba(89, 189, 2, .35);
+    border: 3px solid rgba(89, 189, 2, .35);
     width: 100%;
+    margin-bottom: 10rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 916px) {
     body {
-        flex-direction: column;
-}
-@media screen and (max-width: 912px) {
-    
+        flex-direction: column;}
     .images {
         height: auto;
 }
+
 @media screen and (max-width: 1200px) {
-    main {
+    main, .parent p {
         padding: 0;
     }
