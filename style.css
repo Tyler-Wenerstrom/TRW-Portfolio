@@ -1,48 +1,122 @@
-
+* {
+    
+    background-color:  RGB(32, 33, 36);
+    color: rgb(10, 121, 102);
+}
 body {
     font-family: 'Anek Latin', sans-serif;
-    display: flex;
-    flex-direction: column;
+}
+ 
+main {
+    padding: 2rem 10rem 0 10rem;
 }
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: RGB(32, 33, 36);
-  padding: 1%;
-}
-
-.name {
-    font-size: 3rem;
-    text-shadow: 2%;
-    background-color: RGB(89, 189, 2);
-    color: black;
-    margin-left: -15px;
-    padding: 1%;
-    opacity: 0.21;
-    width: 45%;
-}
-
-nav {
-    font-size: 2rem;
-    margin-right: 3%;
-    list-style-type: armenian;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px 5px 0 0;
     justify-content: space-between;
-    color: aliceblue;
-
+    font-size: 2rem;
+    align-items: center;
+    color: black;
 }
-a {
-    padding: 6px;
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+    list-style: none;
+}
+
+.h1 {
+    background-color: RGB(89, 189, 2);
+    margin-left: -7px;
+    opacity: 0.25;
+    color: black;
+    border-radius:0 7px 7px 0;
+}
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pic {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.child1, .child2, .child3 {
+    display: flex;
+    justify-content: center;
+    font-size: 4.20rem;
+    padding-bottom: 10px;
+}
+.parent p {
+    display: flex;
+    font-size: 1.75rem;
+    justify-content: center6;
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;    
+}
+.projects .images {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 90%;
+  padding: px;
+  border: solid 4px;
+}
+.images:nth-child(:last-child) {
+    align-self: flex-end;
+}
+.contactinfo {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+.first {
+    position: relative;
+}
+.text-block {
+    position: absolute;
+    top: 0;
+    background-color: rgba(10, 121, 102, .74) ;
+    font-size: 1rem;
+    padding: 0 20px 0 20px;
+    
 }
 a:hover {
 cursor: hands;
 }
-
+img:hover {
+    cursor: hands;
+    }
 .img {
-    border: 100px;
-    border-color: RGB(32, 33, 36);
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: 100px;
+    border-radius:0 7px 7px 0;
+    border: 5px solid rgba(89, 189, 2, .35);
+    width: 100%;
 }
+
 @media screen and (max-width: 768px) {
-    body 
-      flex-direction: column;
+    body {
+        flex-direction: column;
+}
+@media screen and (max-width: 912px) {
+    
+    .images {
+        height: auto;
+}
+@media screen and (max-width: 1200px) {
+    main {
+        padding: 0;
     }

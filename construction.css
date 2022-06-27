@@ -1,0 +1,19 @@
+* {
+    background-color:  RGB(32, 33, 36);
+    color: rgb(10, 121, 102);
+    font-family: 'Anek Latin', sans-serif;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+.const {
+    display: flex;
+    justify-content: center;
+}
